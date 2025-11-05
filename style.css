@@ -129,6 +129,9 @@ header .right{
 .slides{
   display: none;
 }
+.slides p{
+  text-align: center;
+}
 .prev, .next {
   cursor: pointer;
   position: absolute;
