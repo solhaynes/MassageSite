@@ -9,10 +9,6 @@ body{
   flex-direction: column;
 }
 
-main{
-
-}
-
 h2{
   text-align: center;
 }
@@ -22,7 +18,7 @@ footer{
   width: 100%;
   margin-top: auto;
 }
-.header{
+header{
   height: fit-content;
   background-color: #112719;
   border-radius: 0px 0px 85px 85px;
@@ -66,7 +62,7 @@ footer{
   display:block;
   text-align: center;
   border-radius: 25px;
-  margin-left: -10px;
+  transition-duration: .5s;
 }
 .navbar a:hover{
   background-color: white;
@@ -80,14 +76,18 @@ footer{
   margin: 20px;
   width: 75%;
 }
-.header .left{
+header .left{
   text-align: center;
-  font-size: x-large;
-  margin-left: auto;
-  
+  font-size: xx-large;
+  margin: 0 auto 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-.header .right{
+header .right{
   width: 75%
+}
+.header-container{
+  grid-column: span 2;
 }
 .container.footer{
   display: grid;
@@ -100,11 +100,19 @@ footer{
 }
 .bottom-left ul{
   list-style-type: none;
+  display: flex;
+  margin-bottom: 20px;
 }
-.bottom-left a{
+.bottom-left li{
+  margin: 0 10px 0px 10px;
+}
+.bottom-left svg{
   color: white;
+  transition-duration: .5s;
 }
-
+.bottom-left svg:hover{
+  transform: scale(1.1);
+}
 #book-now{
   height: 50px;
   width: fit-content;
@@ -116,11 +124,13 @@ footer{
   text-decoration: none;
   color: black;
   margin-top: 50px;
-  margin-right: 50px;
+  margin-right: 20px;
+  transition-duration: .5s;
 }
 
 #book-now:hover{
   background-color: white;
   border-width: 2px;
   border-color: #d3ae34;
+  transform: scale(1.1);
 }
