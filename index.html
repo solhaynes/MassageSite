@@ -17,7 +17,7 @@
     <div class="nav-section">
       <a href="index.html"><img src="./assets/white_logo.svg" class="logo"></a>
       <nav class="navbar">
-        <a href="index.html" class="active">Home</a>
+        <a href="index.html" class="active-page">Home</a>
         <a href="about.html">About</a>
         <a href="services.html">Services</a>
         <a href="directions.html">Directions</a>
@@ -44,9 +44,96 @@
 
 
   <main>
-    <h2>Welcome to Solomon's Massage</h2>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum maiores nesciunt id temporibus fugit!
-    Fugiat, eius incidunt culpa numquam ut eum dolorem laudantium nobis quo cum! Voluptatibus, deleniti eius.
+    <section id="testimonials">
+      <div class="slideshow-container">
+        <div class="left-col">
+          <a class="prev" onclick="minusSlides(1)">&#10094;</a>
+        </div>
+        <div class="center-col">
+          <div class="slides">
+            <div class="numbertext">1 / 6</div>
+            <p>
+              I’ve seen Solomon for years. As a massage therapist, I am speaking with experience. My most recent massage
+              was
+              so relaxing! Solomon was helpful and focused on all my muscle problems. He was very knowledgeable with my
+              areas of tension, and asked about desired pressure many times during the massage. <br>
+              Afterwards, he suggested to get a more regular schedule going, that would benefit my bodies needs. You
+              won’t
+              regret getting a massage from Solomon.<br>
+              -Kasey H.
+            </p>
+
+          </div>
+          <div class="slides">
+            <div class="numbertext">2 / 6</div>
+            <p>
+              I have been to several massage therapists over the years, but Solomon is by far my favorite! He caters the
+              massage to my stress points and provides deep tissue massage where needed to alleviate tight knots and
+              tension. Regular massage sessions with Solomon have also helped tremendously to reduce my tension
+              headaches.
+              And he's both professional and personable... it's like being treated by a friend who truly cares!<br>
+              -Jynene
+            </p>
+          </div>
+          <div class="slides">
+            <div class="numbertext">3 / 6</div>
+            <p>
+              I have been scheduling with Solomon for close to two years. I suffer with the chronic condition of
+              Fibromyalgia. With regular massages I have all but eliminated my Fibromyalgia flareups.He is a very
+              personable therapist I have enjoyed getting to know.<br>
+              -Diane S.
+            </p>
+          </div>
+          <div class="slides">
+            <div class="numbertext">4 / 6</div>
+            <p>
+              Solomon is truly amazing! He's knowledgeable, attentive, and always know just the right pressure—whether I
+              need something relaxing or deep and therapeutic. On top of that, he is so personable and easy to talk to,
+              which makes every session comfortable and enjoyable. I always leave feeling refreshed and cared for.
+              Highly
+              recommended!<br>
+              -Melinda J.
+            </p>
+          </div>
+          <div class="slides">
+            <div class="numbertext">5 / 6</div>
+            <p>
+              I have been seeing Solomon for at least five years, and the experience has been nothing short of
+              exceptional. From the beginning, I felt completely comfortable, as he is professional, respectful, and
+              values privacy. His treatments have made a remarkable difference in my health—my severe migraines and
+              chronic back pain have improved significantly since I began seeing him. He is kind, personable, and truly
+              listens to his clients’ needs. I have so much trust in his care that even my daughter sees him now. I am
+              deeply grateful for the positive impact he has had on our well-being.<br>
+              -Amber M
+            </p>
+          </div>
+          <div class="slides">
+            <div class="numbertext">6 / 6</div>
+            <p>
+              I have trusted Solomon for the past several years to deliver an amazing massage experience. He is
+              professional, respectful, and trustworthy. My sessions with him are an important part of my physical and
+              mental health. It is my great pleasure to recommend him!<br>
+              -Sheila B.
+            </p>
+          </div>
+        </div>
+        <div class="right-col">
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- The dots/circles -->
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+      </div>
+
+    </section>
+
   </main>
 
   <footer>
@@ -104,6 +191,7 @@
       </div>
     </div>
   </footer>
+  <script src="massage_script.js"></script>
 </body>
 
 </html>
