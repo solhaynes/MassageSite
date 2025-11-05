@@ -68,7 +68,7 @@ header{
   background-color: white;
 }
 
-.active-page{
+.nav-section .active{
   background-color: white;
 }
 .card{
@@ -109,6 +109,7 @@ header .right{
 .bottom-left svg{
   color: white;
   transition-duration: .5s;
+  height: 40px;
 }
 .bottom-left svg:hover{
   transform: scale(1.1);
